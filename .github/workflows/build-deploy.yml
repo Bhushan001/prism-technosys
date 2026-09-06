@@ -1,0 +1,50 @@
+name: Build & Deploy Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/web/**"
+      - ".github/workflows/build-deploy.yml"
+  workflow_dispatch: {}
+  # Triggered by a Sanity webhook (via a small relay, e.g. a GitHub "repository
+  # dispatch" call) whenever an editor publishes content, so the static site
+  # rebuilds without anyone touching this repo. See docs/content-model.md.
+  repository_dispatch:
+    types: [sanity-publish]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static export
+        env:
+          NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.SANITY_PROJECT_ID }}
+          NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
+        run: npm run build
+
+      - name: Deploy to cPanel via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./apps/web/out/
+          server-dir: ${{ secrets.FTP_SERVER_DIR || '/public_html/' }}
