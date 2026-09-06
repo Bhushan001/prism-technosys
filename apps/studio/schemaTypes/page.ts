@@ -13,7 +13,7 @@ export const page = defineType({
         list: [
           { title: "Home", value: "home" },
           { title: "About", value: "about" },
-          { title: "Products", value: "products" },
+          { title: "Services", value: "services" },
           { title: "Capabilities", value: "capabilities" },
         ],
       },

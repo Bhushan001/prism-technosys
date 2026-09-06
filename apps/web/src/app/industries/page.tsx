@@ -6,7 +6,7 @@ import { industries } from "@/content/industries";
 
 export const metadata: Metadata = {
   title: "Industries",
-  description: "The space, nuclear, chemical and agro-processing industries Crystal Engineers builds equipment for.",
+  description: "The manufacturing, healthcare, retail and financial-services industries Prism Technosys builds for.",
 };
 
 export default function IndustriesPage() {
@@ -15,7 +15,7 @@ export default function IndustriesPage() {
       <Container>
         <EyebrowLabel>Industries We Serve</EyebrowLabel>
         <h1 className="mt-5 max-w-2xl font-display text-4xl leading-[1.1] text-ink sm:text-5xl">
-          Sectors that can&apos;t afford to get it wrong.
+          Sectors we understand, not just sectors we bill.
         </h1>
 
         <div className="mt-16">

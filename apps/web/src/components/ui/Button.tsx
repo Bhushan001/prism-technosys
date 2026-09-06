@@ -25,7 +25,7 @@ export function Button({
   className?: string;
   type?: "button" | "submit";
 }) {
-  const classes = `inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold transition-colors ${variantClasses[variant]} ${className}`;
+  const classes = `inline-flex items-center justify-center gap-2 whitespace-nowrap px-6 py-3.5 text-sm font-semibold transition-colors ${variantClasses[variant]} ${className}`;
 
   const content = (
     <>

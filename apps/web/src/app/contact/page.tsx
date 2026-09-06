@@ -7,7 +7,7 @@ import { siteSettings } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Crystal Engineers — Plot No. 15, MIDC Industrial Area, Bhosari, Pune.",
+  description: "Get in touch with Prism Technosys — Business Bay, Pune, Maharashtra, India.",
 };
 
 const infoItems = [
@@ -49,8 +49,8 @@ export default function ContactPage() {
 
           <div className="mt-10 aspect-video w-full overflow-hidden border border-line">
             <iframe
-              title="Crystal Engineers location"
-              src="https://maps.google.com/maps?q=MIDC%20Bhosari%2C%20Pune&z=14&output=embed"
+              title="Prism Technosys location"
+              src="https://maps.google.com/maps?q=Pune%2C%20Maharashtra%2C%20India&z=12&output=embed"
               className="h-full w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

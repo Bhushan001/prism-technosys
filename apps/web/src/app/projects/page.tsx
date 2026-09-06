@@ -6,7 +6,7 @@ import { projects } from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Selected projects delivered by Crystal Engineers across space, nuclear, chemical and agro-processing industries.",
+  description: "Selected projects delivered by Prism Technosys across manufacturing, healthcare, retail and financial services.",
 };
 
 export default function ProjectsPage() {

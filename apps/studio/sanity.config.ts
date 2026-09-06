@@ -11,8 +11,8 @@ const projectId = process.env.SANITY_STUDIO_PROJECT_ID ?? "REPLACE_WITH_PROJECT_
 const dataset = process.env.SANITY_STUDIO_DATASET ?? "production";
 
 export default defineConfig({
-  name: "crystal-engineers-studio",
-  title: "Crystal Engineers CMS",
+  name: "prism-technosys-studio",
+  title: "Prism Technosys CMS",
   projectId,
   dataset,
   plugins: [structureTool({ structure }), visionTool()],

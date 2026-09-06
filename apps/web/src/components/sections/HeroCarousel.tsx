@@ -33,8 +33,8 @@ export function HeroCarousel({ slides }: { slides: readonly Slide[] }) {
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80">{slide.copy}</p>
 
         <div className="mt-9 flex flex-wrap gap-4">
-          <Button href="/products" variant="inverse">
-            Explore Products
+          <Button href="/services" variant="inverse">
+            Explore Services
           </Button>
           <Button href="/contact" variant="outline">
             Request a Quote

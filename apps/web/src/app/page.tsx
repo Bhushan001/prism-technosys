@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
 import { HeroCarousel } from "@/components/sections/HeroCarousel";
 import { ArrowRightIcon } from "@/components/icons";
-import { heroSlides } from "@/content/products";
+import { heroSlides } from "@/content/services";
 import { homeHighlights, homeCta } from "@/content/home";
 import { stats } from "@/content/site";
 import { industries } from "@/content/industries";
@@ -21,8 +21,8 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="What We Do"
-            title="Complex equipment, delivered right the first time."
-            description="From first sketch to site commissioning, every piece of equipment we ship carries our name on the nameplate."
+            title="Software and websites, delivered right the first time."
+            description="From first sketch to launch day, every project we ship carries our name on it."
           />
           <div className="mt-14 grid gap-8 sm:grid-cols-3">
             {homeHighlights.map((item, i) => (
@@ -41,7 +41,7 @@ export default function HomePage() {
       <section className="py-20 sm:py-28">
         <Container>
           <div className="flex flex-wrap items-end justify-between gap-6">
-            <SectionHeading eyebrow="Industries We Serve" title="Built for the sectors that can't afford to get it wrong." />
+            <SectionHeading eyebrow="Industries We Serve" title="Digital experience shaped around how your industry works." />
             <Link href="/industries" className="hidden items-center gap-2 text-sm font-semibold text-ink sm:flex">
               View all industries <ArrowRightIcon className="h-4 w-4" />
             </Link>
@@ -60,7 +60,7 @@ export default function HomePage() {
 
       <section className="bg-paper-muted py-20 sm:py-28">
         <Container>
-          <SectionHeading eyebrow="Trusted By" title="Partners who don't compromise on quality." align="center" />
+          <SectionHeading eyebrow="Who We Work With" title="Businesses we build for, at every stage." align="center" />
           <div className="mt-14 grid grid-cols-2 gap-px border border-line bg-line sm:grid-cols-3 lg:grid-cols-4">
             {clients.map((client) => (
               <div key={client} className="flex items-center justify-center bg-paper-muted px-4 py-10">
