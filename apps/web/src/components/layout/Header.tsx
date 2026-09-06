@@ -27,14 +27,14 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex">
           {nav.map((item) => {
             const active = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`border-b-2 pb-1 text-sm font-medium transition-colors ${
+                className={`whitespace-nowrap border-b-2 pb-1 text-sm font-medium transition-colors ${
                   active ? "border-accent text-ink" : "border-transparent text-ink/80 hover:text-ink"
                 }`}
               >
@@ -44,12 +44,15 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-6 lg:flex">
-          <a href={siteSettings.phoneHref} className="flex items-center gap-2 text-sm text-ink/80 hover:text-ink">
-            <PhoneIcon className="h-4 w-4 text-accent" />
+        <div className="hidden shrink-0 items-center gap-5 xl:flex">
+          <a
+            href={siteSettings.phoneHref}
+            className="flex items-center gap-2 whitespace-nowrap text-sm text-ink/80 hover:text-ink"
+          >
+            <PhoneIcon className="h-4 w-4 shrink-0 text-accent" />
             {siteSettings.phone}
           </a>
-          <Button href="/contact" className="!px-5 !py-3 text-xs">
+          <Button href="/contact" className="!px-6 !py-3 whitespace-nowrap text-xs">
             Request Quote
           </Button>
         </div>
@@ -59,14 +62,14 @@ export function Header() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-10 w-10 items-center justify-center text-ink lg:hidden"
+          className="flex h-10 w-10 items-center justify-center text-ink xl:hidden"
         >
           {open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
         </button>
       </Container>
 
       {open && (
-        <div className="border-t border-line bg-white lg:hidden">
+        <div className="border-t border-line bg-white xl:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {nav.map((item) => (
               <Link

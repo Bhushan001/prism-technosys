@@ -7,18 +7,18 @@ from "code in this repo" to "client can edit content and see it go live."
 ## Current state
 
 The site (`apps/web`) currently renders from local TypeScript content modules
-in `apps/web/src/content/*.ts`, seeded with the placeholder copy from the
-Emergent prototype (`crystal-innovate.preview.emergentagent.com`). The Sanity
-Studio schema is written and type-checked but **not yet wired into the site's
-data fetching** — that's the next phase, once a real Sanity project exists.
+in `apps/web/src/content/*.ts`, seeded with placeholder copy describing Prism
+Technosys as a digital product studio. The Sanity Studio schema is written
+and type-checked but **not yet wired into the site's data fetching** — that's
+the next phase, once a real Sanity project exists.
 
 | Content module (`apps/web/src/content/`) | Sanity document type | Notes |
 | --- | --- | --- |
 | `site.ts` (`siteSettings`, `stats`) | `siteSettings` (singleton) | Nav labels stay in code — only company facts are editable. |
-| `products.ts` (`heroSlides`, `productValueProps`, `products`, `productsHero`, `productsCta`) | `page` (`slug: "home"` / `"products"`) + `product` | Hero slide array lives on the `home` page doc; product cards are their own `product` docs. |
+| `services.ts` (`heroSlides`, `serviceValueProps`, `services`, `servicesHero`, `servicesCta`) | `page` (`slug: "home"` / `"services"`) + `service` | Hero slide array lives on the `home` page doc; service cards are their own `service` docs. |
 | `industries.ts` | `industry` | One document per sector. |
 | `projects.ts` | `project` | References an `industry` document; **placeholder entries — replace with real case studies.** |
-| `clients.ts` | `client` | Renders as a text wordmark until a `logo` image is uploaded. |
+| `clients.ts` | `client` | Currently renders generic business-type categories, not named clients/logos — see open questions below. |
 | `capabilities.ts` | `page` (`slug: "capabilities"`) | Lifecycle steps as portable text / structured content. |
 | `home.ts` | `page` (`slug: "home"`) | |
 
@@ -68,12 +68,16 @@ data fetching** — that's the next phase, once a real Sanity project exists.
    - `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, and optionally
      `FTP_SERVER_DIR` — cPanel FTP/FTPS credentials for `build-deploy.yml`.
 
-## Open questions for the client (also tracked in the plan)
+## Open questions (also tracked in the plan)
 
-- Real company facts to replace the placeholder stats, certifications and
-  founding story.
-- Confirmation on client-logo usage rights (currently rendered as text
-  wordmarks, not logo artwork).
+- Real company facts to replace the placeholder stats and founding story in
+  `content/site.ts`.
+- Real contact details (`phone`, `email`, `address` in `content/site.ts`, and
+  `RECIPIENT_EMAIL` in `apps/web/public/contact-handler.php`) — currently
+  plausible-looking but invented placeholders.
+- Whether to name real clients/case studies once permission is confirmed —
+  `clients.ts` currently shows generic business-type categories rather than
+  fabricated company names, on purpose.
 - Real project/case-study details for the `project` documents.
 - Final domain name and which cPanel host/plan, to confirm PHP availability
   for `apps/web/public/contact-handler.php` and to fill in the FTP secrets

@@ -1,20 +1,20 @@
 export const homeHighlights = [
   {
-    title: "Design & Engineering",
-    body: "Process-driven design and code calculations before fabrication ever begins.",
+    title: "Strategy & Planning",
+    body: "We start by understanding your users, competitors and goals — not a template.",
   },
   {
-    title: "In-House Fabrication",
-    body: "Cutting, forming, welding and machining under one roof in Pune.",
+    title: "Design & Build",
+    body: "Interfaces designed and built in tandem, so nothing gets lost in translation.",
   },
   {
-    title: "Turnkey Delivery",
-    body: "Testing, documentation and site commissioning handled end to end.",
+    title: "Launch & Support",
+    body: "Go live with confidence, backed by support that doesn't disappear after handover.",
   },
 ] as const;
 
 export const homeCta = {
   eyebrow: "Start a Project",
-  title: "Ready to engineer your next project?",
-  body: "Tell us about your process and duty conditions — we'll help you scope the right equipment from day one.",
+  title: "Have a project that needs building right?",
+  body: "Tell us what you're trying to build — we'll help you scope it, whether that's a new site, a redesign, or custom software.",
 };

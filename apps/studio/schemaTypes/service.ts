@@ -1,8 +1,8 @@
 import { defineField, defineType } from "sanity";
 
-export const product = defineType({
-  name: "product",
-  title: "Product",
+export const service = defineType({
+  name: "service",
+  title: "Service",
   type: "document",
   fields: [
     defineField({ name: "name", title: "Name", type: "string", validation: (r) => r.required() }),

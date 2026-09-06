@@ -13,8 +13,8 @@
 
 declare(strict_types=1);
 
-const RECIPIENT_EMAIL = 'info@crystalengineers.net';
-const SITE_NAME = 'Crystal Engineers';
+const RECIPIENT_EMAIL = 'hello@prismtechnosys.com';
+const SITE_NAME = 'Prism Technosys';
 
 header('Content-Type: application/json');
 
@@ -80,7 +80,7 @@ $bodyLines = [
 ];
 
 $headers = [
-    'From: "' . SITE_NAME . ' Website" <no-reply@crystalengineers.net>',
+    'From: "' . SITE_NAME . ' Website" <no-reply@prismtechnosys.com>',
     'Reply-To: ' . $email,
     'Content-Type: text/plain; charset=UTF-8',
 ];

@@ -17,11 +17,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Crystal Engineers — Engineered Process Equipment",
-    template: "%s | Crystal Engineers",
+    default: "Prism Technosys — Digital Product Studio",
+    template: "%s | Prism Technosys",
   },
   description:
-    "Crystal Engineers designs and fabricates pressure vessels, heat exchangers, columns and turnkey process equipment from Pune, India, for the space, nuclear, chemical and sugar industries.",
+    "Prism Technosys designs and builds websites, software and digital products for manufacturing, healthcare, retail and financial services businesses.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

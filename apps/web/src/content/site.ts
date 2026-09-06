@@ -5,7 +5,7 @@
 export const nav = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
+  { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Capabilities", href: "/capabilities" },
   { label: "Projects", href: "/projects" },
@@ -13,25 +13,29 @@ export const nav = [
   { label: "Contact", href: "/contact" },
 ] as const;
 
+// Contact details below are placeholders — replace with Prism Technosys's
+// real phone/email/address before launch.
 export const siteSettings = {
-  name: "Crystal Engineers",
-  establishedLine: "EST. 1990 · PUNE",
-  phone: "+91 20 2712 5555",
-  phoneHref: "tel:+912027125555",
-  email: "info@crystalengineers.net",
+  name: "Prism Technosys",
+  establishedLine: "DIGITAL PRODUCT STUDIO",
+  tagline: "Catalyzing Change, Sculpting Futures",
+  phone: "+91 20 6640 7890",
+  phoneHref: "tel:+912066407890",
+  email: "hello@prismtechnosys.com",
   address: {
-    line1: "Plot No. 15, MIDC Industrial Area,",
-    line2: "Bhosari, Pune — 411026, India",
+    line1: "Business Bay,",
+    line2: "Pune, Maharashtra, India",
   },
-  hours: "Mon – Sat · 9:00 – 18:00 IST",
-  certifications: ["ISO 9001:2015", "ASME U / U2", "NB / R Stamp", "IBR Approved"],
+  hours: "Mon – Sat · 9:30 – 18:30 IST",
+  certifications: ["Agile Delivery", "Dedicated Support", "Transparent Pricing", "On-Time Delivery"],
   footerBlurb:
-    "ISO 9001:2015 certified manufacturer of industrial process equipment. Engineering, fabrication and turnkey delivery for the world's most demanding industries.",
+    "A digital product studio helping businesses design, build and launch websites and software that actually work for their users.",
 };
 
+// Placeholder figures — replace with real numbers once available.
 export const stats = [
-  { value: "34+", label: "Years of Engineering Excellence" },
-  { value: "500+", label: "Projects Delivered Globally" },
-  { value: "40+", label: "Countries Reached" },
-  { value: "120K", label: "Sq. Ft. Manufacturing Facility" },
+  { value: "50+", label: "Projects Delivered" },
+  { value: "30+", label: "Happy Clients" },
+  { value: "10+", label: "Technologies Mastered" },
+  { value: "24/7", label: "Support Availability" },
 ];

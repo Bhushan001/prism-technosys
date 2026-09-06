@@ -1,17 +1,19 @@
-# Crystal Engineers Website
+# Prism Technosys Website
 
-Corporate website for Crystal Engineers, built by Prism Technosys per the
-scope in `Crystal Engineers.pdf`. See `docs/content-model.md` for the CMS
-handover and `.claude/plans/` (or ask Claude) for the original build plan.
+Corporate website for Prism Technosys, a digital product studio. Originally
+scaffolded against the design reference and scope in `Crystal Engineers.pdf`
+(a client project), then repurposed as Prism Technosys's own site — see
+`docs/content-model.md` for the CMS handover and `.claude/plans/` (or ask
+Claude) for the original build plan.
 
 ## Layout
 
 - `apps/web` — the public site: Next.js (App Router, TypeScript), statically
   exported (`output: 'export'`) for deployment to shared/cPanel hosting with
   no Node runtime required.
-- `apps/studio` — Sanity Studio, the content-editing UI for the client. Not
-  yet wired to `apps/web`'s data fetching — see `docs/content-model.md` for
-  the remaining setup steps.
+- `apps/studio` — Sanity Studio, the content-editing UI for whoever manages
+  the site's content. Not yet wired to `apps/web`'s data fetching — see
+  `docs/content-model.md` for the remaining setup steps.
 - `.github/workflows/` — CI: builds and FTP-deploys the site, and deploys the
   Studio, on push to `main` (and on a Sanity publish webhook, once wired).
 

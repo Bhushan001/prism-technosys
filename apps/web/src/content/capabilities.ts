@@ -1,23 +1,23 @@
 export const lifecycleSteps = [
   {
-    title: "Design & Engineering",
-    body: "Process-driven design, code calculations and 3D modelling before a single plate is cut.",
+    title: "Discovery & Strategy",
+    body: "Understanding your users, goals and constraints before a single wireframe is drawn.",
   },
   {
-    title: "Fabrication",
-    body: "In-house cutting, forming, welding and machining across our 120,000 sq. ft. facility.",
+    title: "Design",
+    body: "Wireframes, UI design and prototyping validated with real users before development starts.",
   },
   {
-    title: "Testing & Inspection",
-    body: "Hydro testing, radiography and third-party inspection built into every stage, not bolted on at the end.",
+    title: "Development & QA",
+    body: "Clean, tested code built in the open with regular check-ins, not a black box.",
   },
   {
-    title: "Commissioning & Support",
-    body: "Site supervision and after-sales support until the equipment is running to spec.",
+    title: "Launch & Support",
+    body: "Deployment, training and ongoing support so the site keeps working long after go-live.",
   },
 ] as const;
 
 export const facilityStats = [
-  { value: "120,000", label: "Sq. Ft. Facility" },
-  { value: "300+", label: "Engineers & Craftsmen" },
+  { value: "6-8 Weeks", label: "Typical Project Timeline" },
+  { value: "100%", label: "Source Code Ownership" },
 ];

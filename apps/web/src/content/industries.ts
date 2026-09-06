@@ -9,31 +9,31 @@ export type Industry = {
 
 export const industries: Industry[] = [
   {
-    slug: "space",
-    name: "Space Industry",
+    slug: "manufacturing-engineering",
+    name: "Manufacturing & Engineering",
     description:
-      "Design and manufacture of vacuum chambers, propellant feed systems, and cryogenic equipment for space programs.",
-    tags: ["Vacuum Chambers", "Cryogenic Systems", "Propellant Feed"],
+      "Corporate and product-showcase websites for manufacturers who need to present technical capability clearly online.",
+    tags: ["Corporate Websites", "Product Catalogs", "B2B Lead Gen"],
   },
   {
-    slug: "nuclear-defence",
-    name: "Nuclear & Defence",
+    slug: "healthcare",
+    name: "Healthcare & Life Sciences",
     description:
-      "Code-critical fabrication for atomic energy and defence research establishments, held to the strictest quality and traceability standards.",
-    tags: ["QA Level 1", "Full Traceability", "IBR Approved"],
+      "Patient-friendly, accessible websites and portals for clinics, diagnostics and healthcare providers.",
+    tags: ["Patient Portals", "Appointment Booking", "Accessibility"],
   },
   {
-    slug: "chemical-process",
-    name: "Chemical & Process",
+    slug: "retail-ecommerce",
+    name: "Retail & E-Commerce",
     description:
-      "Reactors, columns and heat transfer equipment for heavy chemical, metallurgical and mineral processing lines worldwide.",
-    tags: ["Reactors", "Distillation Columns", "Corrosive Duty Alloys"],
+      "Storefronts and catalog platforms built to convert browsers into buyers, on any device.",
+    tags: ["E-Commerce", "Catalog Management", "Payments"],
   },
   {
-    slug: "sugar-agro",
-    name: "Sugar & Agro-Processing",
+    slug: "bfsi-fintech",
+    name: "BFSI & FinTech",
     description:
-      "Evaporators, juice heaters and process vessels engineered for the throughput and uptime demands of sugar and agro-processing plants.",
-    tags: ["Evaporator Bodies", "Juice Heaters", "High Uptime Design"],
+      "Secure, compliance-aware digital experiences for banking, insurance and financial services businesses.",
+    tags: ["Security First", "Compliance-Aware", "Dashboards"],
   },
 ];

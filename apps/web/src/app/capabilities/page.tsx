@@ -6,7 +6,7 @@ import { lifecycleSteps, facilityStats } from "@/content/capabilities";
 
 export const metadata: Metadata = {
   title: "Capabilities",
-  description: "Design, fabrication, testing and commissioning capabilities at Crystal Engineers' 120,000 sq. ft. Pune facility.",
+  description: "How Prism Technosys designs, builds and launches websites and software, from discovery to support.",
 };
 
 export default function CapabilitiesPage() {
@@ -20,18 +20,18 @@ export default function CapabilitiesPage() {
             Capabilities
           </p>
           <h1 className="max-w-2xl font-display text-4xl leading-[1.1] text-white sm:text-5xl">
-            End-to-end capability, from concept to commissioning.
+            End-to-end capability, from concept to launch.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-white/80">
-            A 120,000 sq. ft. facility, 300+ engineers and craftsmen, and a single-minded focus on getting complex
-            equipment right.
+            A small, senior team and a single-minded focus on getting your project right — no handoffs to
+            junior benches, no scope creep.
           </p>
         </Container>
       </section>
 
       <section className="py-20 sm:py-28">
         <Container>
-          <SectionHeading eyebrow="What We Do" title="Every step of the equipment lifecycle." />
+          <SectionHeading eyebrow="What We Do" title="Every step of the project lifecycle." />
           <div className="mt-14 grid gap-8 sm:grid-cols-2">
             {lifecycleSteps.map((step) => (
               <div key={step.title}>

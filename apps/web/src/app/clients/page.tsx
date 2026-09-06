@@ -5,16 +5,16 @@ import { clients } from "@/content/clients";
 
 export const metadata: Metadata = {
   title: "Clients",
-  description: "The manufacturers, research institutions and PSUs Crystal Engineers has delivered process equipment to.",
+  description: "The kinds of businesses Prism Technosys builds websites and software for.",
 };
 
 export default function ClientsPage() {
   return (
     <section className="py-20 sm:py-28">
       <Container>
-        <EyebrowLabel>Our Clients</EyebrowLabel>
+        <EyebrowLabel>Who We Work With</EyebrowLabel>
         <h1 className="mt-5 max-w-2xl font-display text-4xl leading-[1.1] text-ink sm:text-5xl">
-          A partial list of the partners we serve.
+          Businesses we&apos;re proud to build for.
         </h1>
 
         <div className="mt-14 grid grid-cols-2 gap-px border border-line bg-line sm:grid-cols-4">

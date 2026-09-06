@@ -1,6 +1,5 @@
 // Mirrors the planned Sanity `project` document type.
-// Placeholder entries — the proposal calls out a "Projects" section explicitly;
-// the client should replace these with real case studies via the CMS.
+// Placeholder entries — replace with real case studies via the CMS.
 
 export type Project = {
   slug: string;
@@ -11,39 +10,39 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "cryogenic-test-facility",
-    title: "Cryogenic Test Facility Vessels",
-    industry: "Space Industry",
-    outcome: "12 vacuum-jacketed vessels delivered and commissioned on schedule for a national space research programme.",
+    slug: "corporate-website-revamp",
+    title: "Corporate Website Revamp",
+    industry: "Manufacturing & Engineering",
+    outcome: "Migrated a legacy site to a modern, CMS-driven platform with a 40% faster load time.",
   },
   {
-    slug: "heavy-water-plant-exchangers",
-    title: "Heavy Water Plant Heat Exchangers",
-    industry: "Nuclear & Defence",
-    outcome: "Titanium shell & tube exchangers fabricated to QA Level 1 with full radiographic traceability.",
+    slug: "patient-booking-portal",
+    title: "Patient Booking Portal",
+    industry: "Healthcare & Life Sciences",
+    outcome: "Designed and built an online appointment system that cut phone-in bookings by half.",
   },
   {
-    slug: "distillation-column-revamp",
-    title: "Distillation Column Revamp",
-    industry: "Chemical & Process",
-    outcome: "Tray internals redesigned and re-fabricated, lifting throughput 18% without a shell change.",
+    slug: "d2c-storefront-launch",
+    title: "D2C Storefront Launch",
+    industry: "Retail & E-Commerce",
+    outcome: "Launched a headless commerce storefront from concept to go-live in under 8 weeks.",
   },
   {
-    slug: "sugar-mill-evaporator-body",
-    title: "Multi-Effect Evaporator Body",
-    industry: "Sugar & Agro-Processing",
-    outcome: "Shop-fabricated evaporator body shipped in modular sections for fast field erection ahead of crush season.",
+    slug: "loan-origination-dashboard",
+    title: "Loan Origination Dashboard",
+    industry: "BFSI & FinTech",
+    outcome: "Built an internal dashboard that replaced three spreadsheets with one consolidated workflow.",
   },
   {
-    slug: "reactor-vessel-clad-steel",
-    title: "Clad-Steel Reactor Vessel",
-    industry: "Chemical & Process",
-    outcome: "Duplex-clad reactor built to ASME Section VIII Div. 2 for a corrosive process duty.",
+    slug: "brand-website-cms",
+    title: "Brand Website & CMS",
+    industry: "Manufacturing & Engineering",
+    outcome: "Delivered a fully responsive, CMS-editable corporate site with enquiry-form integration.",
   },
   {
-    slug: "propellant-feed-skid",
-    title: "Propellant Feed System Skid",
-    industry: "Space Industry",
-    outcome: "Fully tested skid package covering piping, instrumentation and controls, shipped ready to commission.",
+    slug: "membership-platform",
+    title: "Membership Platform",
+    industry: "Retail & E-Commerce",
+    outcome: "Built a subscription management portal integrated with payment gateways and email automation.",
   },
 ];

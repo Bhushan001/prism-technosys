@@ -8,7 +8,7 @@ import { stats, siteSettings } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "The story, facility and certifications behind Crystal Engineers.",
+  description: "The story and approach behind Prism Technosys.",
 };
 
 export default function AboutPage() {
@@ -19,19 +19,18 @@ export default function AboutPage() {
           <div>
             <EyebrowLabel>Our Story</EyebrowLabel>
             <h1 className="mt-5 font-display text-4xl leading-[1.1] text-ink sm:text-5xl">
-              Built by engineers, run by craftsmen.
+              Built by builders, trusted by growing businesses.
             </h1>
           </div>
 
           <div>
             <p className="text-base leading-relaxed text-muted">
-              Crystal Engineers was founded in 1990 with a simple belief — that world-class process equipment could
-              be engineered and manufactured in India for customers anywhere on earth.
+              Prism Technosys exists to help businesses turn ideas into working software — websites, platforms and
+              tools that are simple to use and built to last.
             </p>
             <p className="mt-5 text-base leading-relaxed text-muted">
-              Today, from our 120,000 sq.ft. facility in Pune, we design and fabricate pressure vessels, heat
-              exchangers, columns and turnkey systems that operate at the heart of space programs, nuclear plants,
-              and heavy chemical processing lines around the world.
+              We work as an extension of your team: understanding your users, designing around their needs, and
+              shipping code we&apos;re proud to hand over — fully documented, fully yours.
             </p>
 
             <dl className="mt-9 grid grid-cols-2 gap-x-6 gap-y-4">
@@ -53,7 +52,7 @@ export default function AboutPage() {
           <div>
             <EyebrowLabel>Let&apos;s Talk</EyebrowLabel>
             <h2 className="mt-5 max-w-lg font-display text-3xl text-ink sm:text-4xl">
-              Want to see the facility for yourself?
+              Have a project you&apos;d like to talk through?
             </h2>
           </div>
           <Button href="/contact">Get in Touch</Button>
