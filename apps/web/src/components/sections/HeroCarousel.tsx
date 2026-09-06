@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { Photo } from "@/components/ui/Photo";
 import { ChevronLeftIcon, ChevronRightIcon } from "@/components/icons";
 
-type Slide = { eyebrow: string; title: string; copy: string };
+type Slide = { eyebrow: string; title: string; copy: string; image: string };
 
 export function HeroCarousel({ slides }: { slides: readonly Slide[] }) {
   const [index, setIndex] = useState(0);
@@ -21,7 +21,7 @@ export function HeroCarousel({ slides }: { slides: readonly Slide[] }) {
 
   return (
     <section className="relative flex min-h-[640px] items-end overflow-hidden">
-      <PlaceholderArt className="absolute inset-0" />
+      <Photo src={slide.image} alt="" overlay className="absolute inset-0" />
       <Container className="relative z-10 w-full pb-20 pt-32">
         <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
           <span className="h-px w-8 bg-accent" aria-hidden="true" />

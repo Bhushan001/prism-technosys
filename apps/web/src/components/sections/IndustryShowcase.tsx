@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { Photo } from "@/components/ui/Photo";
 import { EyebrowLabel } from "@/components/ui/EyebrowLabel";
 import { ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from "@/components/icons";
 import type { Industry } from "@/content/industries";
@@ -15,7 +15,7 @@ export function IndustryShowcase({ industries }: { industries: Industry[] }) {
   return (
     <div>
       <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-        <PlaceholderArt className="aspect-[4/3] w-full" />
+        <Photo src={industry.image} alt="" className="aspect-[4/3] w-full" />
         <div className="flex flex-col justify-center">
           <EyebrowLabel>
             {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
