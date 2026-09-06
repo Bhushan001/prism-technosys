@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { EyebrowLabel } from "@/components/ui/EyebrowLabel";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { Photo } from "@/components/ui/Photo";
 import { projects } from "@/content/projects";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <div key={project.slug}>
-              <PlaceholderArt className="aspect-[4/3] w-full" />
+              <Photo src={project.image} alt="" className="aspect-[4/3] w-full" />
               <span className="mt-4 inline-block text-xs font-semibold uppercase tracking-wide text-muted">
                 {project.industry}
               </span>

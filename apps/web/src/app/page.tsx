@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StatBand } from "@/components/ui/StatBand";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { Photo } from "@/components/ui/Photo";
 import { HeroCarousel } from "@/components/sections/HeroCarousel";
 import { ArrowRightIcon } from "@/components/icons";
 import { heroSlides } from "@/content/services";
@@ -50,7 +50,7 @@ export default function HomePage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {industries.map((industry) => (
               <Link key={industry.slug} href="/industries" className="group block">
-                <PlaceholderArt className="aspect-[4/3] w-full" />
+                <Photo src={industry.image} alt={industry.name} className="aspect-[4/3] w-full" />
                 <h3 className="mt-4 text-base font-semibold text-ink group-hover:text-accent">{industry.name}</h3>
               </Link>
             ))}

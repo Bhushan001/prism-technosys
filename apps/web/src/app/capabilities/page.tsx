@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
-import { lifecycleSteps, facilityStats } from "@/content/capabilities";
+import { Photo } from "@/components/ui/Photo";
+import { lifecycleSteps, facilityStats, capabilitiesHero } from "@/content/capabilities";
 
 export const metadata: Metadata = {
   title: "Capabilities",
@@ -13,7 +13,7 @@ export default function CapabilitiesPage() {
   return (
     <>
       <section className="relative flex min-h-[460px] items-end overflow-hidden">
-        <PlaceholderArt className="absolute inset-0" />
+        <Photo src={capabilitiesHero.image} alt="" overlay className="absolute inset-0" />
         <Container className="relative z-10 w-full pb-16 pt-28">
           <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             <span className="h-px w-8 bg-accent" aria-hidden="true" />
@@ -35,7 +35,7 @@ export default function CapabilitiesPage() {
           <div className="mt-14 grid gap-8 sm:grid-cols-2">
             {lifecycleSteps.map((step) => (
               <div key={step.title}>
-                <PlaceholderArt className="aspect-video w-full" />
+                <Photo src={step.image} alt="" className="aspect-video w-full" />
                 <h3 className="mt-5 text-lg font-semibold text-ink">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{step.body}</p>
               </div>

@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { EyebrowLabel } from "@/components/ui/EyebrowLabel";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderArt } from "@/components/ui/PlaceholderArt";
+import { Photo } from "@/components/ui/Photo";
 import { RulerIcon, ShieldCheckIcon, LayersIcon } from "@/components/icons";
 import { servicesHero, serviceValueProps, services, servicesCta } from "@/content/services";
 
@@ -18,7 +18,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="relative flex min-h-[420px] items-end overflow-hidden">
-        <PlaceholderArt className="absolute inset-0" />
+        <Photo src={servicesHero.image} alt="" overlay className="absolute inset-0" />
         <Container className="relative z-10 w-full pb-16 pt-28">
           <h1 className="max-w-2xl font-display text-4xl leading-[1.1] text-white sm:text-5xl">
             {servicesHero.title}
@@ -48,7 +48,7 @@ export default function ServicesPage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {services.map((service) => (
               <div key={service.slug} className="flex flex-col bg-white p-8">
-                <PlaceholderArt className="aspect-video w-full" />
+                <Photo src={service.image} alt="" className="aspect-video w-full" />
                 <h3 className="mt-6 font-display text-2xl text-ink">{service.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted">{service.summary}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
@@ -74,7 +74,7 @@ export default function ServicesPage() {
               Request a Quote
             </Button>
           </div>
-          <PlaceholderArt className="h-full min-h-[320px] w-full" />
+          <Photo src={servicesCta.image} alt="" className="h-full min-h-[320px] w-full" />
         </Container>
       </section>
     </>

@@ -82,3 +82,7 @@ the next phase, once a real Sanity project exists.
 - Final domain name and which cPanel host/plan, to confirm PHP availability
   for `apps/web/public/contact-handler.php` and to fill in the FTP secrets
   above.
+- Photography: `apps/web/public/images/` currently holds CC0 stock photos
+  (sourced via openverse.org, no attribution required) as stand-ins — swap
+  for real Prism Technosys team/work photography when available, via the
+  `image` field on the relevant `service`/`industry`/`project` documents.
